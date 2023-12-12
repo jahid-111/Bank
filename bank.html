@@ -13,76 +13,56 @@
 </header>
 
 
-<main class=" bg-slate-400">
+<main class=" bg-slate-600 py-5 rounded-2xl w-11/12 m-auto mt-10">
 <section>
-    <h2 class="text-4xl text-center text-yellow-500 font-semibold py-2">Earn Deposite & Expanse</h2>
+    <h2 class="text-4xl text-center text-yellow-500 my-3 font-semibold py-2">Earn Deposite & Expanse</h2>
 </section>
 
-
 <!-- DISPLAY RESLUT CALCULATOR   -->
+
 <section>
 <div class="grid sm:grid-cols-3 w-9/12 gap-5 mx-auto justify-items-center">
 
 <!-- DPS  -->
     <div class="bg-green-300 p-5 w-full text-center rounded-lg text-white">
         <h2 class="sm:text-4xl text-2xl font-semibold my-1">Total Deposite </h2>
-        <h1 class="font-mono font-semibold sm:text-5xl text-3xl">1200.0</h1>
+        <h1 class="font-mono font-semibold sm:text-5xl text-3xl">$<span id="dps-total">1200</span>.00</h1>
     </div>
     
 <!-- WDW  -->
     <div class="bg-red-300 p-5 w-full text-center rounded-lg text-white">
         <h2 class="sm:text-4xl text-2xl font-semibold my-1">Total Withdraw </h2>
-        <h1 class="font-mono font-semibold sm:text-5xl text-3xl">200.0</h1>
+        <h1 class="font-mono font-semibold sm:text-5xl text-3xl">200.00</h1>
     </div>
 
 <!-- CURRENT  -->
     <div class="bg-green-300 p-5 w-full text-center rounded-lg text-white">
         <h2 class="sm:text-4xl text-2xl font-semibold my-1">Current Balance </h2>
-        <h1 class="font-mono font-semibold sm:text-5xl text-3xl">1900.0</h1>
+        <h1 class="font-mono font-semibold sm:text-5xl text-3xl">$<span id="prv-blnc">800</span>.00</h1>
     </div>
 
 </div>
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<hr class="w-7/12 m-auto my-3 bg-black">
 
 <!-- DISPLAY <<<<<INPUT>>>>> OF CALCULATOR  -->
-<section class="bg-lime-200 mt-5">
+<section class="mt-5">
 
 <div class="grid sm:grid-cols-2 w-9/12 gap-5 mx-auto justify-items-center">
 
     <!-- DEPOSITE SECTION  -->
 
-    <div class="bg-green-300 h-auto w-full">
+    <div class="bg-green-300 h-auto w-full m-2 rounded-lg">
         <h2 class="text-4xl text-white font-semibold text-center my-3">DEPOSITE</h2>
-        <input class="w-10/12 mx-auto block h-12 font-mono font-semibold rounded-sm my-5" type="text" name="" placeholder="  $ Enter Your Deposite amount">
-        <button class="bg-green-400 rounded-lg text-white font-medium text-2xl block m-auto my-3 px-4 py-2 hover:bg-gray-700">Deposite</button>
+        <input id="dps-amount" class="w-10/12 mx-auto block h-12 font-mono font-semibold rounded-sm my-5" type="text" name="" placeholder="  $ Enter Your Deposite amount">
+        <button  id="dps-btn"  class="bg-green-400 rounded-lg text-white font-medium text-2xl block m-auto my-3 px-4 py-2 hover:bg-gray-700">Deposite</button>
     </div>
     
     <!-- WITHDRAW SECTION  -->
 
-    <div class="bg-red-300 h-auto w-full">
+    <div class="bg-red-300 h-auto w-full  m-2 rounded-lg">
         <h2 class="text-4xl text-white font-semibold text-center my-3">WITHDRAW</h2>
         <input class="w-10/12 mx-auto block h-12 font-mono font-semibold text-gray-600 rounded-sm my-5" type="text" name="" placeholder="   $ Enter Your Deposite amount">
         <button class="bg-green-400 rounded-lg text-white font-medium text-2xl block m-auto my-3 px-3 py-2 hover:bg-gray-700">Deposite</button>
@@ -92,12 +72,19 @@
 </div>
 </section>
 
-
-
 </main>
 
 
+<footer class="bg-green-400 text-center mt-10">
 
+<div class="text-2xl font-serif">
+    <p class="my-2 py-1 text-slate-700">Code By Mohd. Jahidul Islam</p>
+    <hr class="w-5/12 m-auto">
+    <p class="my-2 py-1 text-slate-700">HTML, tailwindcss & JavaScript</p>
+</div>
 
+</footer>
+
+    <script src="JSFile/bank.js"></script>
 </body>
 </html>
