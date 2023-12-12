@@ -25,9 +25,21 @@ logBtn.addEventListener('click', function(){
     else{
     alert('User Not Valid Please enter Valid Information')
 }
-
-
 })
 
 
-// console.log(logBtn)
+document.getElementById('data').addEventListener('click', function(){
+
+
+
+const data=document.getElementById('data');
+
+data.style.color="red";
+data.innerText="Click Again For More"
+// console.log(data);
+alert("Log In Email: myemail@mail.com")
+alert("Log In Pass: 123456")
+
+
+
+})

@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Cash</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-400">
 
     <header class="bg-green-500 mx-auto">
         <h1 class="text-5xl text-yellow-50 font-semibold text-center py-5">Creative Cash</h1>
@@ -13,20 +14,37 @@
 
     <main>
 
-<section class="bg-slate-700 rounded-md w-10/12 m-auto py-10 mt-20">
-        <h2 class="text-4xl mb-10 font-semibold  text-slate-300 text-center">Log in</h2>
-        <hr class="w-9/12 m-auto my-10">
+<section class="bg-slate-700 rounded-xl w-10/12 m-auto py-10 mt-20">
+        <h2 class="text-4xl mb-3 font-semibold  text-slate-300 text-center">Log In</h2>
+        <hr class="w-9/12 m-auto mb-10">
 
     <!-- log In form  -->
     <div>
-        <input id="email-input" class="block w-10/12 my-5 py-4 bg-slate-200 text-slate-950 font-mono rounded-md m-auto" type="email"  placeholder="  Enter email@mail.com">
+        <input id="email-input" class="block w-10/12 my-5 py-4 bg-slate-200 text-slate-950 font-mono rounded-md m-auto" type="email"  placeholder="  Enter Your email@mail.com">
         <input id="pass-input" class="block w-10/12 mb-5 py-4 bg-slate-200 text-slate-950 font-mono rounded-md m-auto" type="password" placeholder="  Enter Your Valid password">
         <!-- <input class="my-5 block px-3 py-2 w-10/12" type="checkbox" name="" id=""> -->
+      <!-- <button class="bg-gray-400 hover:bg-gray-200 w-1/12 rounded-lg text-white font-thin block m-auto mt-7  py-3">Check Data</button> -->
         <button id="log-btn" class="bg-green-400 hover:bg-green-300 w-10/12 rounded-lg text-white font-medium text-2xl block m-auto mt-7  py-3">Submit</button>
+       
+        <p class="text-gray-300 my-5 sm:first-letter:text-2xl text-start w-10/12 m-auto">Check For User Data <span id="data" class="text-blue-300 cursor-pointer font-semibold">Click Me</span></p>
+        <!-- <a id="data" class="text-blue-300 font-semibold" href="">Click me</a> -->
+
+
     </div>
 </section>
 
     </main>
+
+
+    <footer class="bg-green-100 w-10/12 m-auto text-center mt-10 rounded-3xl">
+        
+        <div class="font-serif">
+            <p class="my-2 py-1 text-slate-400">Code By Mohd. Jahidul Islam</p>
+            <hr class="w-10/12 m-auto">
+            <p class="my-2 py-1 text-slate-500">HTML, TailwindCSS & JavaScript</p>
+        </div>
+        
+     </footer>
 
 
     <script src="JSFile/login.js"></script>
